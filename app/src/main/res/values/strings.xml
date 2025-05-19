@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Random Number Generator</string>
+    <string name="action_show_history">Show History</string>
+    <string name="action_clear_history">Clear History</string>
+    <string name="action_about">About</string>
+    <string name="about_text">Ezra Rosenbaum MCOO 255 Spring 25</string>
+    <string name="instructions">Please enter in the numbers:</string>
+    <string name="hint_from">From (minimum)</string>
+    <string name="hint_to">To (maximum)</string>
+    <string name="result_prefix">Generated number: </string>
+    <string name="error_empty_fields">Please enter both minimum and maximum numbers</string>
+    <string name="error_invalid_range">Maximum must be greater than minimum</string>
+    <string name="history_key">random_number_history</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="error_minimum_zero">Minimum number must be at least 0</string>
+    <string name="error_invalid_numbers">Please enter valid numbers</string>
+    <string name="history_dialog_title">History</string>
+    <string name="history_cleared">History cleared</string>
+    <string name="generate">Generate</string>
+</resources>

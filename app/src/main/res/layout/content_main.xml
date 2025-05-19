@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_margin_top"
+        app:layout_constraintTop_toBottomOf="@id/textInstructions">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_from"
+            android:inputType="numberSigned"
+            android:freezesText="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_margin_top"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutFrom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_to"
+            android:inputType="numberSigned"
+            android:freezesText="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/result_margin_top"
+        android:gravity="center"
+        android:textColor="?attr/colorSecondary"
+        android:textSize="@dimen/text_size_large"
+        android:freezesText="true"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutTo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
